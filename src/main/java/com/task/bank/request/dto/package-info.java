@@ -1,1 +1,1 @@
-package com.BankingApplication.request.dto;
+package com.task.bank.request.dto;

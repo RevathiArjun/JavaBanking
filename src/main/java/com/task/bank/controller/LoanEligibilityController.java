@@ -1,7 +1,7 @@
-package com.BankingApplication.controller;
+package com.task.bank.controller;
 
-import com.BankingApplication.response.dto.LoanEligibilityResponseDTO;
-import com.BankingApplication.service.LoanEligibilityService;
+import com.task.bank.response.dto.LoanEligibilityResponseDTO;
+import com.task.bank.service.LoanEligibilityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.BankingApplication.Entity;
+package com.task.bank.entity;
 
 import jakarta.persistence.*;
 

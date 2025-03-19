@@ -1,4 +1,4 @@
-package com.BankingApplication.response.dto;
+package com.task.bank.response.dto;
 
 public class LoanEligibilityResponseDTO {
 

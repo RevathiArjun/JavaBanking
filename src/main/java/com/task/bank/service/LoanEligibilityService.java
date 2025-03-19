@@ -1,12 +1,12 @@
-package com.BankingApplication.service;
+package com.task.bank.service;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.BankingApplication.Entity.LoanEligibility;
-import com.BankingApplication.repository.LoanEligibilityRepository;
-import com.BankingApplication.response.dto.LoanEligibilityResponseDTO;
+import com.task.bank.entity.LoanEligibility;
+import com.task.bank.repository.LoanEligibilityRepository;
+import com.task.bank.response.dto.LoanEligibilityResponseDTO;
 
 import java.util.List;
 import java.util.stream.Collectors;
