@@ -2,7 +2,6 @@ package com.task.bank.service.impl;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
-
 import com.task.bank.Exception.LoanEligibilityNotFoundException;
 import com.task.bank.entity.LoanEligibility;
 import com.task.bank.repository.LoanEligibilityRepository;
@@ -19,7 +18,7 @@ import java.util.stream.Collectors;
 public class LoanEligibilityServiceImpl implements LoanEligibilityService {
 	
 	
-    private final ModelMapper modelMapper;  // Inject ModelMapper
+    private final ModelMapper modelMapper;  // Inject ModelMapper	
     private final LoanEligibilityRepository loanEligibilityRepository;
 
     // Method to get all loan eligibility records as DTOs

@@ -13,4 +13,11 @@ public class GlobalExceptionHandler {
         // Returning a 404 response with the exception message
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
     }
+    
+    
+    @ExceptionHandler(DebitCardEligibilityNotFoundException.class)
+    public ResponseEntity<String> handleDebitCardEligibilityNotFoundException(DebitCardEligibilityNotFoundException ex) {
+        // Return a custom message and HTTP status code when the exception is thrown
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+    }
 }
