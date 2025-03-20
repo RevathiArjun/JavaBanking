@@ -28,6 +28,8 @@ public class LoanEligibilityController {
        LoanEligibilityResponseDTO loanEligibilityOptional = loanEligibilityService.getLoanEligibilityByLoanType(loanType);
 
        return loanEligibilityOptional;
+       
+       
     }
 
     

@@ -1,8 +1,14 @@
 package com.task.bank.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class LoanEligibility {
 
     @Id
@@ -14,40 +20,6 @@ public class LoanEligibility {
 
     @Column(nullable = false)  // Ensures eligibility_criteria cannot be null
     private String eligibilityCriteria;
-
-    // Default constructor
-    public LoanEligibility() {}
-
-    // Parameterized constructor
-    public LoanEligibility(String loanType, String eligibilityCriteria) {
-        this.loanType = loanType;
-        this.eligibilityCriteria = eligibilityCriteria;
-    }
-
-    // Getters and Setters
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getLoanType() {
-        return loanType;
-    }
-
-    public void setLoanType(String loanType) {
-        this.loanType = loanType;
-    }
-
-    public String getEligibilityCriteria() {
-        return eligibilityCriteria;
-    }
-
-    public void setEligibilityCriteria(String eligibilityCriteria) {
-        this.eligibilityCriteria = eligibilityCriteria;
-    }
 
     // Override toString for easy printing
     @Override
