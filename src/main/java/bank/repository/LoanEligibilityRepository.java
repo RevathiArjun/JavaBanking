@@ -1,9 +1,9 @@
-package com.task.bank.repository;
+package bank.repository;
 
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import com.task.bank.entity.*;
+import bank.entity.*;
 
 @Repository
 public interface LoanEligibilityRepository extends JpaRepository<LoanEligibility, Integer> {

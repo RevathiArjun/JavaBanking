@@ -1,4 +1,4 @@
-package com.task.bank.entity;
+package bank.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

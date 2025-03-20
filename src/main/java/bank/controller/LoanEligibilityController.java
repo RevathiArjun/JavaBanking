@@ -1,7 +1,7 @@
-package com.task.bank.controller;
+package bank.controller;
 
-import com.task.bank.response.dto.LoanEligibilityResponseDTO;
-import com.task.bank.service.LoanEligibilityService;
+import bank.response.dto.LoanEligibilityResponseDTO;
+import bank.service.LoanEligibilityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,14 +15,14 @@ public class LoanEligibilityController {
     @Autowired
     private LoanEligibilityService loanEligibilityService;
 
-    // Endpoint to get all loan eligibility records
+    // End point to get all loan eligibility records
     @GetMapping("/")
     public ResponseEntity<List<LoanEligibilityResponseDTO>> getAllLoanEligibility() {
         List<LoanEligibilityResponseDTO> loanEligibilityList = loanEligibilityService.getAllLoanEligibility();
         return new ResponseEntity<>(loanEligibilityList, HttpStatus.OK);
     }
 
-    // Endpoint to get loan eligibility by loan type
+    // End point to get loan eligibility by loan type
     @GetMapping("/type/{loanType}")
     public LoanEligibilityResponseDTO getLoanEligibilityByLoanType(@PathVariable String loanType) {
        LoanEligibilityResponseDTO loanEligibilityOptional = loanEligibilityService.getLoanEligibilityByLoanType(loanType);
